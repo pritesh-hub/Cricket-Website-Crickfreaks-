@@ -1,0 +1,245 @@
+/* body{
+    background-color: black;
+} */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.1rem;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #323344 100%);
+    transition: top 2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 10px 10px 17px rgba(0,0,0,0.4);
+}
+.navbar{
+    display: flex;
+    transition: top 2s;
+}
+.navbar a{
+    display: flex;
+    color: white;
+    transition: 2s ease-in-out;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: #0ef;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
+.logo{
+    color: black;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: opx;
+}
+
+.h2 span{
+    color:orange;
+}
+
+.h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.cricGallery{
+    margin-top: 80px;
+    color: black;
+}
+
+.cg-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.cg-items .cg-item{
+    padding: .8rem;
+    border: 2px solid black;
+    background-color: aliceblue;
+    height: 320px;
+    width: 180px;
+    color: aliceblue;
+}
+
+#vk1{
+    background-image: url('vk1.jpg');
+    background-size: cover;
+}
+#vk2{
+    background-image: url('vk2.jpg');
+    background-size: cover;
+}
+#vk3{
+    background-image: url('vk3.jpg');
+    background-size: cover;
+}
+#vk4{
+    background-image: url('vk4.jpg');
+    background-size: cover;
+}
+#vk5{
+    background-image: url('vk5.jpg');
+    background-size: cover;
+}
+#vk6{
+    background-image: url('vk6.jpg');
+    background-size: cover;
+}
+#vk7{
+    background-image: url('vk7.jpg');
+    background-size: cover;
+}
+#vk8{
+    background-image: url('vk8.jpg');
+    background-size: cover;
+}
+
+#rohit1{
+    background-image: url('rohit1.jpg');
+    background-size: cover;
+}
+#rohit2{
+    background-image: url('rohit2.jpg');
+    background-size: cover;
+}
+#rohit3{
+    background-image: url('rohit3.jpg');
+    background-size: cover;
+}
+#rohit4{
+    background-image: url('rohit4.jpg');
+    background-size: cover;
+}
+#rohit5{
+    background-image: url('rohit5.jpg');
+    background-size: cover;
+}
+#rohit6{
+    background-image: url('rohit6.jpg');
+    background-size: cover;
+}
+#rohit7{
+    background-image: url('rohit7.jpg');
+    background-size: cover;
+}
+
+#msd1{
+    background-image: url('msd1.jpg');
+    background-size: cover;
+}
+#msd2{
+    background-image: url('msd2.jpg');
+    background-size: cover;
+}
+#msd3{
+    background-image: url('msd3.jpg');
+    background-size: cover;
+}
+#msd4{
+    background-image: url('msd4.jpg');
+    background-size: cover;
+}
+#msd5{
+    background-image: url('msd5.jpg');
+    background-size: cover;
+}
+#msd6{
+    background-image: url('msd6.jpg');
+    background-size: cover;
+}
+#msd7{
+    background-image: url('msd7.jpg');
+    background-size: cover;
+}
+#msd8{
+    background-image: url('msd8.jpg');
+    background-size: cover;
+}
+#msd9{
+    background-image: url('msd9.jpg');
+    background-size: cover;
+}
+
+#a1-img{
+    color: white;
+}
+#a1-img:hover{
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------------- */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    /* padding: 20px; */
+    padding-top: 20px;
+    text-align: center;
+    height: 230px;
+    /* border-radius: 3%; */
+    bottom: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+footer li {
+    margin: 0 15px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#i1:hover{
+   text-decoration: underline;
+}
+#i2:hover{
+    text-decoration: underline;
+}
+#i3:hover{
+    text-decoration: underline;
+}
+#i4:hover{
+    text-decoration: underline;
+}
+
+

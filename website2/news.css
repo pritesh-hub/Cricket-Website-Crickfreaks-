@@ -1,0 +1,194 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.1rem;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #323344 100%);
+    transition: top 2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 10px 10px 17px rgba(0,0,0,0.4);
+
+}
+.navbar{
+    display: flex;
+    transition: top 2s;
+}
+.navbar a{
+    display: flex;
+    color: white;
+    transition: 2s ease-in-out;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: #0ef;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
+.logo{
+    color: black;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+.span{
+    color: orange;
+}
+.c-n{
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.c-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.news{
+    /* background-color:#1b263b; */
+    padding-bottom: 20px;
+    padding-top: 1px;
+    padding-left: 15px;
+    padding-right: 5px;
+    border-radius: 3%;
+}
+
+.news-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.news-content .newsBlocks{
+    flex: 1 1 10rem;
+    background: #38404e;
+    /* padding: 3rem 2rem 12rem; */
+    padding: 8rem 4rem 4rem;
+    border-radius: 4rem;
+    text-align:center ;
+    justify-content: center;
+    border: 0.2rem solid #1f242d;
+    transition: .5s ease;
+    color: white;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+}
+
+#nb1{
+    background-image: url('news1.jpg');
+    background-size: cover;
+    
+    justify-content: center;
+}
+
+#nb2{
+    background-image: url('news6.jpg');
+    background-size: cover;
+    justify-content: center;
+}
+
+#nb3{
+    background-image: url('news3.webp');
+    background-size: cover;
+    justify-content: center;
+}
+
+ #nb4{
+    background-image: url('news4-2.jpg');
+    background-size: cover;
+    justify-content: center;
+}
+
+#nb5{
+    background-image: url('news5.jpg');
+    background-size: cover;
+    justify-content: center;
+}
+
+#nb6{
+    background-image: url('news6.jpg');
+    background-size: cover;
+    justify-content: center;
+}
+
+
+.news-content .newsBlocks:hover{
+    border-color: yellow;
+}
+
+#read-more{
+    color:rgb(113, 113, 196) ;
+    transition:  ease-in-out;
+}
+
+#read-more:hover{
+    color: white;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------------- */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    /* padding: 20px; */
+    padding-top: 20px;
+    text-align: center;
+    height: 230px;
+    /* border-radius: 3%; */
+    bottom: 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+footer li {
+    margin: 0 15px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#i1:hover{
+   text-decoration: underline;
+}
+#i2:hover{
+    text-decoration: underline;
+}
+#i3:hover{
+    text-decoration: underline;
+}
+#i4:hover{
+    text-decoration: underline;
+}

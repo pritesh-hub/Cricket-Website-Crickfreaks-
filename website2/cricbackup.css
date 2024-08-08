@@ -1,0 +1,743 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+/* -----------------------------------------------Nav bar--------------------------------------------------------------- */
+nav{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+body {
+    font-family: Poppins, Arial, sans-serif;
+    background-color: hsl(225, 6%, 9%);
+    color: #d4dbe4;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    background: none;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8bc6ec;
+    background-image: linear-gradient(135deg,#8bc6ec 0%,#323344 100%);
+    padding: 0 40px;
+    height: 4.8rem;
+    box-shadow: 10px 10px 17px rgba(0,0,0,0.4);
+}
+
+
+.dropdowns {
+    display: flex;
+    align-self: stretch;
+}
+
+.dropdown {
+    position: relative;
+    padding: 26px;
+}
+
+.dropdown-button {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 8px;
+}
+
+.dropdown:hover {
+    background-color: hsl(225, 30%, 12%);
+    cursor: pointer;
+}
+
+.dropdown-button span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.dropdown-button i {
+    font-size: 14px;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    min-width: 100%;
+    background-color: #202124;
+    display: none;
+}
+
+.dropdown-menu button {
+    padding: 12px 24px;
+}
+
+.dropdown-menu button:hover {
+    background-color: hsl(225, 6%, 20%);
+}
+
+/* ==============logo================= */
+
+nav .left .logo img {
+    width: 120px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.logo img {
+    position: relative;
+    height: 55px;
+    background-color: var(--background);
+    border-radius: 8px;
+    transition: 1000ms all;
+    transform-origin: center left;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    outline: 1px solid var(--background);
+    overflow: hidden;
+
+}
+
+.logo img:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.logo img:hover~.logo img {
+    font-weight: bold;
+    cursor: pointer;
+    transform: translateX(22px);
+}
+
+
+/*-------------------- ------------------------Main Section------------------------------------------- */
+.main{
+    display: flex;
+    margin-top: 60px;
+    background: #f5f5f5;
+}
+
+/*----------------------Main left----------------------- */
+
+.main .left{
+    width: 25%;
+    height: 92vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: #f5f5f5;
+    padding: 20px 6px 5px 10px;
+    position: fixed;
+}
+
+.main .left::-webkit-scrollbar{
+    width: 7px;
+}
+
+.main .left::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: #f5f5f5;
+}
+
+.main .left:hover::-webkit-scrollbar-thumb{
+    background: #cccccc;
+}
+
+.main .left .img{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+
+.main .left .img img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: 8px 15px 8px 0;
+
+}
+
+.main .left hr{
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background: #cccccc;
+    margin: 10px 0;
+}
+
+.main .left h2{
+    font-size: 18px;
+    color: #919191;
+    margin: 5px 0;
+}
+
+.main .left .edit{
+    color: #45abff;
+    font-size: 15px;
+    float: right;
+    position: relative;
+    bottom: 23px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.main .left:hover .edit{
+    opacity: 1;
+}
+
+
+
+/* ------------------------left Shortcut------------------------- */
+
+
+
+
+
+
+
+/* -----------------------------------------------Centre Section Story----------------------- */
+
+
+
+.main .center{
+    width: 50%;
+    height: 50%;
+    padding: 20px 20px 0 20px;
+    background: #f5f5f5;
+    margin-left: 25%;
+   
+}
+
+.main .center::-webkit-scrollbar{
+    width: 0;
+}
+
+.main .center .top_box{
+    width: 125%;
+    height: 260px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+.main .center .top_box .my_story_card{
+    width: 190px;
+    height: 190px;
+    overflow: hidden;
+    margin: 19px auto;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    cursor: pointer;
+
+  
+}
+
+.main .center .top_box .my_story_card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main .center .top_box .my_story_card .story_upload{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    position: relative;
+    bottom: 50px;
+    cursor: pointer;
+}
+
+.main .center .top_box .my_story_card .story_upload img{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    bottom: 15px;
+    border-radius: 50%;
+}
+
+.main .center .top_box .my_story_card .story_upload .story_tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.main .center .top_box .story_card{
+    width: 168px;
+    height: 188px;
+    overflow: hidden;
+    margin: 30px auto;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main .center .top_box .story_card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+.main .center .top_box .story_card .story_name{
+    position: relative;
+    bottom: 100px;
+    padding: 0 10px;
+}
+
+.main .center .top_box .story_card .story_name .name{
+    font-weight: bold;
+    color: #000000;
+    font-size: 12px;
+}
+
+
+/*----------------------------- Hover Effect story Card------------------------------ */
+
+.story_card {
+    position: relative;
+    left: 0px;
+    width: 140px;
+    height: 160px;
+    background-color: var(--background);
+    border-radius: 8px;
+    transition: 1000ms all;
+    transform-origin: center left;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    outline: 1px solid var(--background);
+    overflow: hidden;
+
+}
+
+.story_card:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+
+.story_card:hover~.story_card {
+    font-weight: bold;
+    cursor: pointer;
+    transform: translateX(22px);
+}
+
+
+/*--------------------------------------- memes section ---------------------------- */
+
+
+.main .center .friends_post{
+    margin: 10px 0;
+    width: 100%;
+    height: 10%;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+}
+
+.main .center .friends_post .friend_post_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.main .center .friends_post .friend_post_top .img_and_name{
+    display: flex;
+    align-items: center;
+}
+
+.main .center .friends_post .friend_post_top .img_and_name img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    /* object-fit: cover; */
+    object-position: center;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.main .center .friends_post .friend_post_top .img_and_name .friends_name .friends_name{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main .center .friends_post .friend_post_top .img_and_name .friends_name .friends_name:hover{
+    text-decoration: underline;
+}
+
+.main .center .friends_post .friend_post_top .img_and_name .friends_name .time{
+    font-size: 14px;
+    color: #919191;
+    margin: 3px 0;
+}
+
+
+.main .center .friends_post .friend_post_top .menu{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.main .center .friends_post .friend_post_top .menu:hover{
+    background: #efefef;
+    cursor: pointer;
+}
+
+.main .center .friends_post .friend_post_top .menu i{
+    line-height: 35px;
+    margin-left: 8px;
+    font-size: 18px;
+}
+
+.main .center .friends_post img{
+    width: 100%;
+    height: 450px;
+    /* object-fit: cover; */
+    object-position: center;
+    border-radius: 5px;
+}
+
+.main .center .friends_post .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.main .center .friends_post .info .emoji_img{
+    display: flex;
+}
+
+.main .center .friends_post .info .emoji_img img{
+    width: 20px;
+    height: 20px;
+}
+
+.main .center .friends_post .info .emoji_img p{
+    margin-left: 10px;
+    font-size: 16px;
+    color: #919191;
+}
+
+.main .center .friends_post .info .comment{
+    display: flex;
+    align-items: center;
+}
+
+.main .center .friends_post .info .comment p{
+    padding: 0 12px;
+    font-size: 15px;
+    color: #919191;
+}
+
+.main .center .friends_post hr{
+    width: 100%;
+    height: 1px;
+    background: #cccccc;
+    border: 0;
+    margin: 10px 0;
+}
+
+.main .center .friends_post .like{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .center .friends_post .like .like_icon{
+    display: flex;
+    align-items: center;
+}
+
+.main .center .friends_post .like .like_icon i{
+    font-size: 20px;
+    margin-right: 8px;
+    color: #919191;
+}
+
+.main .center .friends_post .like .like_icon i.activi{
+    color: #45abff;
+}
+
+.main .center .friends_post .comment_warpper{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.main .center .friends_post .comment_warpper .comment_search{
+    width: 95%;
+    padding: 5px 15px;
+    background: #efefef;
+    border-radius: 30px;
+}
+
+.main .center .friends_post .comment_warpper .comment_search input{
+    width: 85%;
+    height: 30px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.main .center .friends_post .comment_warpper .comment_search i{
+    padding: 0 5px;
+    color: #919191;
+}
+
+
+.like_icon:hover{
+    scale: 1.8;
+}
+
+
+/* -------------------------------------------------------------------- */
+
+
+
+/*-----------------right------------------*/
+
+.main .right{
+    width: 24%;
+    height: 92vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    background: #f5f5f5;
+    padding: 20px 10px 5px 6px;
+    position: fixed;
+    right: 0;
+    margin-top: 31px;
+    margin-bottom: 50px;
+
+}
+
+.high{
+    font-size: large;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 19px;
+    
+}
+
+.main .right::-webkit-scrollbar{
+    width: 7px;
+}
+
+.main .right::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background: #f5f5f5;
+}
+
+.main .right:hover::-webkit-scrollbar-thumb{
+    background: #cccccc;
+}
+
+.main .right.first_block{
+    background-color: #45abff;
+}
+
+
+iframe{
+    border-radius: 20px;
+}
+
+.second_block{
+    margin-top: 15px;
+}
+
+.third_block{
+    margin-top: 15px;
+}
+
+.fourth_block{
+    margin-top: 15px;
+}
+
+.fifth_block{
+    margin-top: 15px;
+}
+
+.sixth_block{
+    margin-top: 15px;
+}
+
+.line{
+    margin-bottom: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+#hight{
+    color:#1f3d64;   
+}
+
+.line{
+    color: #000000;
+}
+
+.img:hover{
+    text-decoration: underline;
+    transition: 2s ease-in-out;
+}
+
+/*-------------------------------------------- hover effect--------------------------------  */
+
+.story_card {
+    position: relative;
+    left: 0px;
+    width: 140px;
+    height: 160px;
+    background-color: var(--background);
+    border-radius: 8px;
+    transition: 1000ms all;
+    transform-origin: center left;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    outline: 1px solid var(--background);
+    overflow: hidden;
+
+}
+
+.story_card:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+
+.story_card:hover~.story_card {
+    font-weight: bold;
+    cursor: pointer;
+    transform: translateX(22px);
+}
+
+
+
+/* ----------------------------left side players stat's-------------------------------------- */
+
+body {
+  background: #e3f2fd;
+}
+::-webkit-scrollbar {
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #f5f5f5;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:#f5f5f5
+}
+.container {
+  display: flex;
+  gap: 12px;
+  max-width: 360px;
+  width: 100%;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  padding: 30px;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-padding: 30px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+.container .card {
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 12px;
+  background: #fff;
+  scroll-snap-align: start;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+
+}
+.card .image {
+  height: 150px;
+  width: 150px;
+  padding: 4px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+
+}
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+.card h2 {
+  margin-top: 25px;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 600;
+}
+.card p {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+}
+
+.image:hover{
+    transform: scale(1.1);
+}
+
+#hight{
+    background: linear-gradient(90deg,#ff9933,#138808);
+    color: transparent;
+    background-clip: text;
+}
